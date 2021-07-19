@@ -1,0 +1,14 @@
+﻿@model Tatil_Seyahat_Sitesi.Models.Class.Yorumlar
+<div class="content-form">
+    <h3>Bir Yorum Bırakın</h3>
+    
+    <form method="post">
+        <input type="hidden" placeholder="ID" name="Blogid" value="@ViewBag.deger" readonly  />
+        <input type="text" placeholder="KullaniciAdi" name="KullaniciAdi"  required />
+        <input type="text" placeholder="E-Posta" name="Mail" required />
+
+        <textarea placeholder="Mesaj" name="Yorum"></textarea>
+        <input type="submit" value="Gönder" />
+    </form>
+</div>
+

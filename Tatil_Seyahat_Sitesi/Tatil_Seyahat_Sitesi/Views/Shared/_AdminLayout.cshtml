@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+        <h3 class="w3-bar-item">Menüler</h3>
+        <a href="/Admin/Index" class="w3-bar-item w3-button">Bloglar</a>
+        <a href="/Admin/YorumListesi" class="w3-bar-item w3-button">Yorumlar</a>
+        <a href="/Admin/Iletisim" class="w3-bar-item w3-button">İletişim</a>
+        <a href="/Admin/Hakkimizda" class="w3-bar-item w3-button">Hakkımızda</a>
+        <br />
+        <br />
+        <a href="/Default/Index" class="w3-bar-item btn btn-primary">Siteye Git</a>
+        <br />
+        <a href="/Girisyap/GirisYap" class="w3-bar-item btn btn-danger">Çıkış Yap</a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:15%">
+
+        <div class="w3-container w3-teal">
+            <h2>Admin Yönetim Paneli</h2>
+        </div>
+
+        
+
+        <div class="w3-container">
+            @RenderBody()
+        </div>
+
+    </div>
+
+</body>
+</html>

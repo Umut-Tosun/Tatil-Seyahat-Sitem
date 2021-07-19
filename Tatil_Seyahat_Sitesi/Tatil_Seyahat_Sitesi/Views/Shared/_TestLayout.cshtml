@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Free Easy-Trip Website Template | Home :: w3layouts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="~/web/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="~/web/js/jquery.min.js"></script>
+    <script src="~/web/js/responsiveslides.min.js"></script>
+
+    <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+         auto: true,
+		 nav: true,
+		 speed: 500,
+		 namespace: "callbacks",
+      });
+    });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="logo"><a href="index.html"><img src="~/web/images/logo3.png" alt="" /></a></div>
+            <div class="con-right">
+                <div class="grid1-l-img">
+                    <img src="~/web/images/contact.png" alt="">
+                </div>
+                <div class="grid1-l-desc">
+                    <p>Whatsapp: +90 553 989 80-71</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="wrap">
+            <ul id="nav">
+                <li><a href="/Default/Index">Ana Sayfa</a></li>
+                <li><a class="hsubs" href="/About/Index">Hakkımızda</a></li>
+                <li>
+                    <a class="hsubs" href="destinations.html">Yerler</a>
+                    <ul class="subs">
+                        <li><a href="#">Oteller</a></li>
+                        <li><a href="#">Restaronlar</a></li>
+                        <li><a href="#">Müzeler</a></li>
+                    </ul>
+                </li>
+                <li><a class="hsubs" href="/Blog/Index">Blogum</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class"content">
+       @RenderBody();
+    </div>
+    <div class="footer-bottom">
+        <div class="wrap">
+            <div class="copy">
+                <p>&copy; 2021 Tatil-Seyahat. Tüm Hakları Saklıdır . | Design by <a href="http://w3layouts.com">SHREK And PING</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

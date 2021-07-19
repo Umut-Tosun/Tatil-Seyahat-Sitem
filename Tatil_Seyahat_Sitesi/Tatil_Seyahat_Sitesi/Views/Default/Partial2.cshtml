@@ -1,0 +1,17 @@
+﻿@using Tatil_Seyahat_Sitesi.Models.Class
+@model List<Blog>
+@foreach (var X in Model)
+  {
+<div class="right">
+    <div class="bot-left">
+        <img src="@X.Blogimage" alt="" style="width:400px;height:200px"/>
+    </div>
+    <div class="left-text">
+
+        <h4>@X.bASLİK</h4>
+        <span class="doller">@X.Tarih.ToString("dd.MM.yyyy")</span>
+        <p>@X.Aciklama.Substring(0, X.Aciklama.Substring(0, 80).LastIndexOf(" ")) </p>
+        <p><a href="/Blog/BlogDetay/@X.ID"><span class="read">Devamını Oku>></span></a></p>
+    </div>
+</div>
+    }

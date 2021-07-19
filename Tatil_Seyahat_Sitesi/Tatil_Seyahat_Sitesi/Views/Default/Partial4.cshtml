@@ -1,0 +1,19 @@
+﻿@using Tatil_Seyahat_Sitesi.Models.Class
+@model List<Blog>
+<div class="padding1">
+    <h4>En Beğendiğim Yerler</h4>
+    <div class="box-left">
+        @foreach (var x in Model)
+        {
+            <div class="bot-img">
+                <a href="/Blog/BlogDetay/@x.ID"> <img src="@x.Blogimage" alt="" style="width:140px;height:80px;" /> </a>
+            </div>
+            <div class="bot-desc">
+                <p>@x.Aciklama.Substring(0, x.Aciklama.Substring(0, 50).LastIndexOf(" ")) </p>
+            </div>
+            <div class="clear"></div>
+           
+        }
+    </div>
+    @Html.Action("Partial5","Default")
+</div>
